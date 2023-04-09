@@ -1323,6 +1323,8 @@ mod tests {
                             youtube_url: None,
                             media: None,
                             protected_attributes: None,
+                            nfp: None,
+                            raw_data: None,
                         }),
                     },
                 };
@@ -1357,6 +1359,8 @@ mod tests {
                 youtube_url: None,
                 media: None,
                 protected_attributes: None,
+                nfp: None,
+                raw_data: None,
             }),
         };
 
@@ -1431,6 +1435,8 @@ mod tests {
                                 youtube_url: None,
                                 media: None,
                                 protected_attributes: None,
+                                nfp: None,
+                                raw_data: None,
                             }),
                         }),
                     },
@@ -1485,6 +1491,8 @@ mod tests {
                     youtube_url: None,
                     media: None,
                     protected_attributes: None,
+                    nfp: None,
+                    raw_data: None,
                 }),
             }),
         };
@@ -1550,6 +1558,8 @@ mod tests {
                             youtube_url: None,
                             media: None,
                             protected_attributes: None,
+                            nfp: None,
+                            raw_data: None,
                         }),
                     },
                 };
@@ -1588,6 +1598,8 @@ mod tests {
                 youtube_url: None,
                 media: None,
                 protected_attributes: None,
+                nfp: None,
+                raw_data: None,
             }),
         };
 
@@ -1650,6 +1662,8 @@ mod tests {
                                 youtube_url: None,
                                 media: None,
                                 protected_attributes: None,
+                                nfp: None,
+                                raw_data: None,
                             }),
                         }),
                         private_metadata: None,
@@ -1713,6 +1727,8 @@ mod tests {
                     youtube_url: None,
                     media: None,
                     protected_attributes: None,
+                    nfp: None,
+                    raw_data: None,
                 }),
             }),
             private_metadata: None,

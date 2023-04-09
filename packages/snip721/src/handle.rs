@@ -1296,6 +1296,8 @@ mod tests {
                 youtube_url: None,
                 media: None,
                 protected_attributes: None,
+                nfp: None,
+                raw_data: None,
             }),
         });
         let private_metadata = Some(Metadata {
@@ -1317,6 +1319,8 @@ mod tests {
                 youtube_url: None,
                 media: None,
                 protected_attributes: None,
+                nfp: None,
+                raw_data: None,
             }),
         });
         let memo = Some("memo".to_string());
@@ -1462,6 +1466,8 @@ mod tests {
                 youtube_url: None,
                 media: None,
                 protected_attributes: None,
+                nfp: None,
+                raw_data: None,
             }),
         });
         let private_metadata = Some(Metadata {
@@ -1483,6 +1489,8 @@ mod tests {
                 youtube_url: None,
                 media: None,
                 protected_attributes: None,
+                nfp: None,
+                raw_data: None,
             }),
         });
         let padding = None;
@@ -1540,6 +1548,8 @@ mod tests {
                         youtube_url: None,
                         media: None,
                         protected_attributes: None,
+                        nfp: None,
+                        raw_data: None,
                     }),
                 }),
                 private_metadata: None,
@@ -1567,6 +1577,8 @@ mod tests {
                         youtube_url: None,
                         media: None,
                         protected_attributes: None,
+                        nfp: None,
+                        raw_data: None,
                     }),
                 }),
                 private_metadata: Some(Metadata {
@@ -1588,6 +1600,8 @@ mod tests {
                         youtube_url: None,
                         media: None,
                         protected_attributes: None,
+                        nfp: None,
+                        raw_data: None,
                     }),
                 }),
                 memo: None,
@@ -1615,6 +1629,8 @@ mod tests {
                         youtube_url: None,
                         media: None,
                         protected_attributes: None,
+                        nfp: None,
+                        raw_data: None,
                     }),
                 }),
                 memo: Some("memo 3".to_string()),
