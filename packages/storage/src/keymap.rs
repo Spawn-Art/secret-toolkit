@@ -367,6 +367,7 @@ impl<'a, K: Serialize + DeserializeOwned, T: Serialize + DeserializeOwned, Ser: 
         if len == 0 || len == removed_pos {
             indexes.pop();
             self.set_indexes_page(storage, page, &indexes)?;
+            self.remove_impl(storage, &key_vec);
             return Ok(());
         }
 

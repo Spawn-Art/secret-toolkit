@@ -343,6 +343,7 @@ impl<'a, K: Serialize + DeserializeOwned, Ser: Serde> Keyset<'a, K, Ser, WithIte
         if len == 0 || len == removed_pos {
             indexes.pop();
             self.set_indexes_page(storage, page, &indexes)?;
+            storage.remove(&key_vec);
             return Ok(());
         }
 
