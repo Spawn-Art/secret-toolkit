@@ -1,4 +1,4 @@
-use cosmwasm_std::Addr;
+use cosmwasm_std::{Addr, Uint128};
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
@@ -51,6 +51,8 @@ pub struct Extension {
     pub nfp: Option<Nfp>,
     /// raw data stored on chain.
     pub raw_data: Option<Vec<RawData>>,
+    /// genome
+    pub genome: Uint128,
 }
 
 /// attribute trait

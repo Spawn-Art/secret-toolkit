@@ -1013,7 +1013,7 @@ mod tests {
 
     use super::*;
     use cosmwasm_std::{
-        to_vec, ContractResult, Empty, Querier, QuerierResult, SystemError, SystemResult,
+        to_vec, ContractResult, Empty, Querier, QuerierResult, SystemError, SystemResult, Uint128,
     };
 
     macro_rules! try_querier_result {
@@ -1325,6 +1325,7 @@ mod tests {
                             protected_attributes: None,
                             nfp: None,
                             raw_data: None,
+                            genome: Uint128::from(0_u128),
                         }),
                     },
                 };
@@ -1361,6 +1362,7 @@ mod tests {
                 protected_attributes: None,
                 nfp: None,
                 raw_data: None,
+                genome: Uint128::from(0_u128),
             }),
         };
 
@@ -1437,6 +1439,7 @@ mod tests {
                                 protected_attributes: None,
                                 nfp: None,
                                 raw_data: None,
+                                genome: Uint128::from(0_u128),
                             }),
                         }),
                     },
@@ -1493,6 +1496,7 @@ mod tests {
                     protected_attributes: None,
                     nfp: None,
                     raw_data: None,
+                    genome: Uint128::from(0_u128),
                 }),
             }),
         };
@@ -1560,6 +1564,7 @@ mod tests {
                             protected_attributes: None,
                             nfp: None,
                             raw_data: None,
+                            genome: Uint128::from(0_u128),
                         }),
                     },
                 };
@@ -1600,6 +1605,7 @@ mod tests {
                 protected_attributes: None,
                 nfp: None,
                 raw_data: None,
+                genome: Uint128::from(0_u128),
             }),
         };
 
@@ -1664,6 +1670,7 @@ mod tests {
                                 protected_attributes: None,
                                 nfp: None,
                                 raw_data: None,
+                                genome: Uint128::from(0_u128),
                             }),
                         }),
                         private_metadata: None,
@@ -1729,6 +1736,7 @@ mod tests {
                     protected_attributes: None,
                     nfp: None,
                     raw_data: None,
+                    genome: Uint128::from(0_u128),
                 }),
             }),
             private_metadata: None,
