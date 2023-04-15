@@ -52,7 +52,7 @@ pub struct Extension {
     /// raw data stored on chain.
     pub raw_data: Option<Vec<RawData>>,
     /// genome
-    pub genome: Uint128,
+    pub genome: Option<Uint128>,
 }
 
 /// attribute trait

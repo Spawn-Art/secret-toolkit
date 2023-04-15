@@ -1298,7 +1298,7 @@ mod tests {
                 protected_attributes: None,
                 nfp: None,
                 raw_data: None,
-                genome: Uint128::from(0_u128),
+                genome: None,
             }),
         });
         let private_metadata = Some(Metadata {
@@ -1322,7 +1322,7 @@ mod tests {
                 protected_attributes: None,
                 nfp: None,
                 raw_data: None,
-                genome: Uint128::from(0_u128),
+                genome: None,
             }),
         });
         let memo = Some("memo".to_string());
@@ -1470,7 +1470,7 @@ mod tests {
                 protected_attributes: None,
                 nfp: None,
                 raw_data: None,
-                genome: Uint128::from(0_u128),
+                genome: None,
             }),
         });
         let private_metadata = Some(Metadata {
@@ -1494,7 +1494,7 @@ mod tests {
                 protected_attributes: None,
                 nfp: None,
                 raw_data: None,
-                genome: Uint128::from(0_u128),
+                genome: None,
             }),
         });
         let padding = None;
@@ -1554,7 +1554,7 @@ mod tests {
                         protected_attributes: None,
                         nfp: None,
                         raw_data: None,
-                        genome: Uint128::from(0_u128),
+                        genome: None,
                     }),
                 }),
                 private_metadata: None,
@@ -1584,7 +1584,7 @@ mod tests {
                         protected_attributes: None,
                         nfp: None,
                         raw_data: None,
-                        genome: Uint128::from(0_u128),
+                        genome: None,
                     }),
                 }),
                 private_metadata: Some(Metadata {
@@ -1608,7 +1608,7 @@ mod tests {
                         protected_attributes: None,
                         nfp: None,
                         raw_data: None,
-                        genome: Uint128::from(0_u128),
+                        genome: None,
                     }),
                 }),
                 memo: None,
@@ -1638,7 +1638,7 @@ mod tests {
                         protected_attributes: None,
                         nfp: None,
                         raw_data: None,
-                        genome: Uint128::from(0_u128),
+                        genome: None,
                     }),
                 }),
                 memo: Some("memo 3".to_string()),
