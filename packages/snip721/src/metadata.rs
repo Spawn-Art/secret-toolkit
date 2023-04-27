@@ -1,4 +1,4 @@
-use cosmwasm_std::{Addr, Uint128};
+use cosmwasm_std::{Uint128};
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
@@ -47,8 +47,6 @@ pub struct Extension {
     /// a select list of trait_types that are in the private metadata.  This will only ever be used
     /// in public metadata
     pub protected_attributes: Option<Vec<String>>,
-    /// NFP data.
-    pub nfp: Option<Nfp>,
     /// raw data stored on chain.
     pub raw_data: Option<Vec<RawData>>,
     /// genome
@@ -96,30 +94,10 @@ pub struct Authentication {
 pub struct RawData {
     /// data bytes in base64
     pub data: String,
-    /// encoding of the media data (eg. svg, svgz, png, webp)
-    pub encoding: Option<String>,
-    /// optional filename
-    pub name: Option<String>,
-}
-
-/// NFP data
-#[derive(Serialize, Deserialize, JsonSchema, Clone, PartialEq, Debug, Default, Eq)]
-pub struct Nfp {
-    /// NFP data bytes and encoding
-    pub data: Option<Vec<RawData>>,
-    /// program reference in NFP package manager
-    pub code: Option<PackageReference>,
-    /// off-chain media files for NFP
-    pub media: Option<Vec<MediaFile>>,
-}
-
-/// Stored NFP package reference
-#[derive(Serialize, Deserialize, JsonSchema, Clone, PartialEq, Debug, Eq)]
-pub struct PackageReference {
-    /// package manager contract
-    pub package_manager: Addr,
-    /// program id in package manager
-    pub id: String,
-    /// version in package manager
-    pub version: Option<String>,
+    /// mime-type of the data, default image/svg+xml
+    pub content_type: Option<String>,
+    /// encoding of the data, default gzip
+    pub content_encoding: Option<String>,
+    /// optional metadata
+    pub metadata: Option<String>,
 }
